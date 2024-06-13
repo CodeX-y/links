@@ -1,116 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yusra Ahmed</title>
-    <style>
-      body {
-        background-color: #280b87;
-        padding-top: 40px;
-        padding-bottom: 40px;
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yusra Ahmed</title>
+  <style>
+    body {
+      background-color: #f9e8c4;
+      padding-top: 40px;
+      padding-bottom: 30px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+      font-size: x-large;
+      color: #333333;
+    }
 
-      .items {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        max-width: 640px;
-        margin: 0 auto;
-      }
+    .items {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 640px;
+      margin: 0 auto;
+      background: #fcf6e8;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-      .banner-image {
-        width: 128px;
-        height: 128px;
-        object-fit: cover;
-        border-radius: 50%;
-      }
+    .banner-image {
+      width: 128px;
+      height: 128px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #87ceeb; /* Pastel sky blue */
+    }
 
-      .thumbnail {
-        width: 48px;
-        height: 48px;
-        border-radius: 50%;
-        object-fit: cover;
-      }
+    .thumbnail {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
 
-      .link {
-        background-color: #f9bc60;
-        display: flex;
-        align-items: center;
-        padding: 5px;
-        max-width: 400px; /* Set your desired maximum width */
-        margin: 0 auto; /* Center the link horizontally */
-      }
+    .link {
+      background-color: #ffc107;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      width: 430px;
+      margin: 0 auto;
+      border-radius: 10px;
+      transition: transform 0.2s;
+      height: 70px;
+    }
 
-      .link img {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        object-fit: cover;
-      }
+    .link img {
+      width: 60px;
+      height: 60px;
+      border-radius: 10px;
+      object-fit: cover;
+      margin-right: 10px;
+    }
 
-      .link a {
-        color: whitesmoke;
-        text-decoration: none;
-        text-align: center;
-        flex-grow: 1;
-        padding-left: 10px;
-      }
+    .link a {
+      color: #333333;
+      text-decoration: none;
+      text-align: center;
+      flex-grow: 1;
+      font-weight: bold;
+      font-size: medium;
+    }
 
-      .name, .banner {
-        color: #fffffe;
-        display: flex;
-        justify-content: center;
-      }
+    .link:hover {
+      transform: scale(1.05);
+    }
 
-      .social-icons {
-        display: flex;
-        justify-content: space-around;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="items">
-      <div class="banner">
-        <img src="/thumbnails/profile-pic.jpg" alt="Yusra Profile Pic" class="banner-image">
-      </div>
+    .name, .banner {
+      display: flex;
+      justify-content: center;
+      font-size: 1.5em;
+      color: #333333;
+    }
 
-      <div class="name">
-        Yusra Ahmed
-      </div>
+    .social-icons {
+      display: flex;
+      justify-content: space-around;
+    }
 
-      <div class="social-icons">
-        <a href="https://github.com/CodeX-y" target="_blank">
-          GitHub
-        </a>
+    .social-icons a img {
+      width: 50px;
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="items">
+    <div class="banner">
+      <img src="/thumbnails/profile-pic.jpg" alt="Yusra Profile Pic" class="banner-image">
+    </div>
 
-        <a href="https://www.linkedin.com/in/yusra-ahmed02/" target="_blank">
-          LinkedIn
-        </a>
-      </div>
+    <div class="name">
+      Yusra Ahmed
+    </div>
 
-      <div class="link">
-        <img
-          src="https://www.ycombinator.com/assets/ycdc/yc-og-image-0cfa80cac837d64d9b4f0705950000b66906ac032791376bd721f246fafcc7b4.png">
+    <div class="social-icons">
+      <a href="https://github.com/CodeX-y" target="_blank">
+        <img src="/thumbnails/github logo.png" alt="GitHub">
+      </a>
+      <a href="https://www.linkedin.com/in/yusra-ahmed02/" target="_blank">
+        <img src="/thumbnails/linkedin logo.png" alt="LinkedIn">
+      </a>
+    </div>
 
-        <a target="_blank" href="http://paulgraham.com/startupideas.html">How to Get Startup Ideas
-          — Paul Graham</a>
-      </div>
+    <div class="link">
+      <img src="https://www.ycombinator.com/assets/ycdc/yc-og-image-0cfa80cac837d64d9b4f0705950000b66906ac032791376bd721f246fafcc7b4.png" alt="How to Get Startup Ideas">
 
-      <div class="link">
-        <img src="/thumbnails/typography.jpg">
+      <a target="_blank" href="http://paulgraham.com/startupideas.html">How to Get Startup Ideas — Paul Graham</a>
+    </div>
 
-        <a target="_blank"
-          href="https://practicaltypography.com/typography-in-ten-minutes.html">Typography in ten minutes — Matthew
-          Butterick</a>
-      </div>
+    <div class="link">
+      <img src="/thumbnails/typography.jpg" alt="Typography in ten minutes">
 
-      <div class="link">
-        <img
-          src="https://media.newyorker.com/photos/59096d451c7a8e33fb38e4ca/16:9/w_1280,c_limit/071210_r16884_p646.jpg">
+      <a target="_blank" href="https://practicaltypography.com/typography-in-ten-minutes.html">Typography in ten minutes — Matthew Butterick</a>
+    </div>
 
-        <a target="_blank" href="https://www.newyorker.com/magazine/2007/12/10/the-checklist/">A
-          Life-Saving Checklist — The New Yorker</a>
-      </div>
-  </body>
+    <div class="link">
+      <img src="https://media.newyorker.com/photos/59096d451c7a8e33fb38e4ca/16:9/w_1280,c_limit/071210_r16884_p646.jpg" alt="A Life-Saving Checklist">
+
+      <a target="_blank" href="https://www.newyorker.com/magazine/2007/12/10/the-checklist/">A Life-Saving Checklist — The New Yorker</a>
+    </div>
+  </div>
+</body>
 </html>
